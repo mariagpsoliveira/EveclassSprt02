@@ -22,16 +22,16 @@ describe('Login Eveclass', () => {
 
     cy.get('input[type="email"]')
      .should('be.visible')
-      .type('mariaiterasysteste@gmail.com')
+      .type('mariagpsilveira@gmail.com')
 
     // Preenche o campo de senha usando o novo ID
     cy.get('input[type="password"]')
       .should('be.visible')
-      .type('Iterasys@123')
+      .type('Maria@123')
     
       cy.resolvaCaptcha()
 
-   cy.contains('button', 'Entrar')
+   cy.contains('button','Entrar')
     .click()// Clica no botão de submissão (login)
   });
 
